@@ -333,15 +333,27 @@ main.page-width {
   background: var(--soft);
 }
 .hero .stage-image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  align-self: center;
   border-radius: 0;
-  height: 100%;
 }
+
+.hero .stage-image img {
+  object-fit: contain;
+}
+
 .hero-copy {
   display: grid;
   align-content: center;
   justify-items: start;
   gap: 9px;
-  padding: clamp(18px, 4.5vw, 46px);
+  padding: clamp(18px, 2.6vw, 34px);
+}
+
+.hero-copy .song-title {
+  font-size: clamp(28px, 4vw, 56px);
 }
 .hero-copy .button {
   margin-top: 5px;
@@ -967,6 +979,9 @@ main.page-width {
     position: static;
     overflow: visible;
     max-height: none;
+  }
+  .hero {
+    grid-template-columns: minmax(0, 1fr);
   }
 }
 @media (max-width: 490px) {
