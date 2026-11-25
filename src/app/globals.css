@@ -596,7 +596,7 @@ main.page-width {
 
 .archive-grid {
   display: grid;
-  grid-template-columns: 174px minmax(0, 1fr);
+  grid-template-columns: 200px minmax(0, 1fr);
   gap: clamp(18px, 3vw, 30px);
 }
 .artist-sidebar {
